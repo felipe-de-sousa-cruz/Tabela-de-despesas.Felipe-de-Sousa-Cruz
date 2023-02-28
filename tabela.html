@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabela de Despesas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: red;
+        font-size: 35px;
+      }
+
+      h2{
+        text-align: right;
+        font-size: 15px;
+        
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .add-btn {
+        float: right;
+        color: white;
+        padding: 5px;
+        border: 1px solid black;
+        background: green;
+        cursor: pointer;
+      }
+
+      .edit-btn,
+      .delete-btn {
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .edit-btn {
+        background-color: yellow;
+      }
+
+      .delete-btn {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Despesas</h1>
+      <h2 class="add-btn">Adicionar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diego</td>
+            <td>Compra no supermercado</td>
+            <td>26/02/2023</td>
+            <td>R$ 150,00</td>
+            <td>
+              <button class="edit-btn">Editar</button>
+              <button class="delete-btn">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Vanessa</td>
+            <td>Almoço</td>
+            <td>26/02/2023</td>
+            <td>R$ 30,00</td>
+            <td>
+              <button class="edit-btn">Editar</button>
+              <button class="delete-btn">Excluir</button>
+            </td>
+          </tr>
+          

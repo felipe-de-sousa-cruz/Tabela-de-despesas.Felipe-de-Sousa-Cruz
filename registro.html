@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabela de Despesas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: red;
+        font-size: 35px;
+      }
+
+      p {
+        text-align: right;
+        font-size: 15px;
+        
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .add-btn {
+        float: right;
+        color: white;
+        padding: 5px;
+        border: 1px solid black;
+        background: green;
+        cursor: pointer;
+        
+      }
+    .return-btn {
+        float: left;
+        color: white;
+        padding: 5px;
+        border: 1px solid black;
+        background: red;
+        cursor: pointer;
+    }
+
+    </style>
+  </head>
+<body>
+    <div class="container">
+        <h1>Registros</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Data</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Compra no supermercado</td>
+              <td>26/02/2023</td>
+              <td>R$ 150,00</td>
+            </tr>
+</body>
+    </table>
+    <br>
+        <div>
+            <button class="return-btn">Voltar</button>
+            <button class="add-btn">Adicionar</button>
+        </div>
+</body>
+</html>
